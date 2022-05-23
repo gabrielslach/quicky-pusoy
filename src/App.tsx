@@ -67,7 +67,7 @@ function App() {
     const mockPlayers = [{name: 'drix', id:'1'}, {name: 'karl', id: '2'}, {name:'des', id: '3'}, {name: 'marcicar', id: '4'}];
     addMockCards();
     dispatch(playersFetched(mockPlayers));
-    
+
     nextTurn.current = setNextTurn(mockPlayers);
 
     if (!nextTurn || !nextTurn.current) return;
@@ -145,7 +145,7 @@ function App() {
                 Pass
               </Button>
             </Grid>
-            <Grid item xs={6}>
+            {/* <Grid item xs={6}>
               <Button variant="contained" color="primary" fullWidth>
                 Pick cards
               </Button>
@@ -154,7 +154,7 @@ function App() {
               <Button variant="contained" color="primary" fullWidth>
                 Swap Cards
               </Button>
-            </Grid>
+            </Grid> */}
           </Grid>
         </Grid>
         {/* Player Cards */}
